@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/record_general_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <SurfaceView
+        android:id="@+id/camera_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- Bug resolver (SurfaceView rendering optimization
+    interrupts animations on orientation change) ->
+    <ImageView
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/transparent"/>-->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/recording_progress_circle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:src="@drawable/recording_progress_circle"
+            android:contentDescription="@string/none" />
+
+        <ImageView
+            android:id="@+id/recording_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/recording_button_off"
+            android:padding="@dimen/toolbar_button_padding"
+            android:contentDescription="@string/none" />
+    </FrameLayout>
+
+    <ImageButton
+        android:background="?android:selectableItemBackground"
+        android:id="@+id/toolbar_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/toolbar_back_arrow"
+        android:padding="@dimen/toolbar_button_padding"
+        android:contentDescription="@string/none"
+        android:adjustViewBounds="false" />
+
+    <TextView
+        android:id="@+id/video_title"
+        android:text=""
+        android:textColor="#DDDDDD"
+        android:textSize="@dimen/toolbar_title_size"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+</RelativeLayout>

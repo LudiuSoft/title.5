@@ -1,8 +1,22 @@
 <resources>
-    <string name="app_name">title.5</string>
+    <!-- TODO: Remove the following line -->
+    <string name="none" translatable="false"></string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="app_name" translatable="false">title.5</string>
+    <string name="app_name_short" translatable="false">t5</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="navigation_drawer_item_profile">Profile</string>
+    <string name="navigation_drawer_item_watch">Watch</string>
+    <string name="navigation_drawer_item_settings">Settings</string>
+    <string name="navigation_drawer_item_help">Help</string>
+
+    <string name="desc_splash_logo">Splash logo for the app</string>
+    <string name="desc_nav_drawer">Open Menu</string>
+    <string name="desc_title_line_low">Lower title line</string>
+    <string name="desc_title_line_up">Upper title line</string>
+    <string name="desc_spin_circle">Spin button</string>
+
+    <string name="spin_start_title">Your next video title.</string>
+    <string name="spin_button_spin">Spin!</string>
+    <string name="spin_button_film">Film!</string>
 </resources>

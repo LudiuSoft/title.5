@@ -1,9 +1,19 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="nav_header_vertical_spacing">16dp</dimen>
-    <dimen name="nav_header_height">160dp</dimen>
-    <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
+    <!-- Various values -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    <dimen name="toolbar_button_padding">10dp</dimen>
+
+    <dimen name="toolbar_title_size">45sp</dimen>
+    <dimen name="min_spin_title_size">18sp</dimen>
+    <dimen name="spin_title_size">33sp</dimen>
+    <dimen name="spin_button_text_size">45sp</dimen>
+
+    <!-- Drawer values -->
+    <dimen name="drawer_width">140dp</dimen>
+    <dimen name="drawer_item_size">125dp</dimen>
+    <dimen name="drawer_item_text_size">20sp</dimen>
+
+    <!-- Spin Fragment -->
+    <dimen name="title_line_distance">70dp</dimen>
 </resources>

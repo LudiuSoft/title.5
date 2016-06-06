@@ -1,22 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="t5.splitscreen.org">
+    package="org.splitscreen.t5">
+
+    <!-- Accessing camera hardware -->
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA"/>
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/MainTheme"
+        android:configChanges="keyboardHidden|orientation|screenSize">
         <activity
-            android:name=".SpinActivity"
+            android:name=".SplashScreen"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".NavDrawerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MainTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".RecordingActivity"
+            android:label="@string/app_name"
+            android:theme="@style/RecordingTheme"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="landscape">
         </activity>
     </application>
 
